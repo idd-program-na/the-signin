@@ -2,36 +2,24 @@
 
 //"Listen" for when the user clicks the #signin button, display the #modal window
 // Make the button function
-// Modal class is the div, change display attribute to ignore display
-let signInBtn = document.querySelector (`.signin`)
+let close = document.querySelector (`.signin`)
 
-signInBtn.addEventListener(`click`, (event) => {
+signin.addEventListener(`click`, (event) => {
 
-  console.log(`Show modal`);
-  let bodyElement = document.querySelector(`.modal`);
-  bodyElement.style.display = `block`;
+  console.log(`!click!`)
 
 })
+// Find element you want to change 
+let bodyElement = document.querySelector(`.modal`)
+
+// Assign a change tot he element
+bodyElement.style.display = `block`;
+
+
+/*Modal class is the div, change display attribute to ignore display*/
+
 //"Listen" for when the user clicks the #close button, display (or fade out) out the #modal window
-
-let closeBtn = document.querySelector (`.close`)
-
-closeBtn.addEventListener(`click`, (event) => {
-
-  console.log(`Close modal`);
-  let bodyElement = document.querySelector(`.modal`);
-  bodyElement.style.display = `none`;
-
-})
 //"Listen" for when the user clicks the #submit button, add an .error class to both input.field elements
-/*let submitBtn = document.querySelector (`.submit`)
-
-submitBtn.addEventListener(`click`, (event) => {
-
-  console.log(`Submit input`);
-  let bodyElement.style.input.field.error = `
-})*/
-
 //Easy: First add the .error class to each individually using getElementById() or querySelector()
 //Advanced: Once successful, try applying to both input.field using querySelectorAll() and a forEach() (or another type of traversal loop)
 //Remove the .error class from any individual <input> when the cursor gives it focus
